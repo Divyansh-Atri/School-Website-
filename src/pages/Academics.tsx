@@ -59,9 +59,9 @@ const Academics = () => {
           
           <Tabs defaultValue="primary" className="max-w-4xl mx-auto">
             <TabsList className="grid grid-cols-1 md:grid-cols-3 mb-8 gap-2">
-              <TabsTrigger value="primary" className="text-lg">Middle Section</TabsTrigger>
-              <TabsTrigger value="middle" className="text-lg">Secondary Section</TabsTrigger>
-              <TabsTrigger value="senior" className="text-lg">Senior Secondary Section</TabsTrigger>
+              <TabsTrigger value="primary" className="text-lg">Middle Sec.</TabsTrigger>
+              <TabsTrigger value="middle" className="text-lg">Secondary Sec.</TabsTrigger>
+              <TabsTrigger value="senior" className="text-lg">Sen Secondary Sec.</TabsTrigger>
             </TabsList>
             
             <TabsContent value="primary" className="bg-white p-6 md:p-8 rounded-lg shadow-md">
