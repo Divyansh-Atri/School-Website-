@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 220 82% 21%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 44 89% 66%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 209 70% 52%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-montserrat;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-merriweather;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply container mx-auto px-4 py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-school-navy;
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-center mx-auto max-w-2xl mb-12 text-gray-600;
+  }
+  
+  .btn-primary {
+    @apply bg-school-navy text-white hover:bg-opacity-90 px-6 py-3 rounded-md transition-all font-medium shadow-md;
+  }
+  
+  .btn-secondary {
+    @apply bg-school-gold text-school-dark hover:bg-opacity-90 px-6 py-3 rounded-md transition-all font-medium shadow-md;
+  }
+}
+
+/* Animation keyframes */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease forwards;
+}
