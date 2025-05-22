@@ -106,7 +106,7 @@ const galleryContent = {
       id: 4,
       title: "Morning Assembly",
       image: "/school/ass.png",
-      caption: "Flag hoisting ceremony on Independence Day"
+      caption: "The daily school assembly is a unifying ritual that cultivates discipline, reflection, and a shared sense of purpose to begin the day."
     },
     {
       id: 5,
