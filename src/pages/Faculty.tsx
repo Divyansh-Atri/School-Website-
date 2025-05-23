@@ -264,6 +264,12 @@ const Faculty = () => {
           image: "/faculty/raj.jpeg",
           education: "Ex Service Man with desired qualification",
           experience: "15+ years"
+        },
+         {
+          name: "Sh. Rajesh Guleria",
+          subject: "Assistant Librarian",
+          image: "/faculty/rajesh.png",
+          experience: "15+ years"
         }
       ]
     }
