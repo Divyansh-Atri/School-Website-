@@ -3,6 +3,8 @@ import Footer from "@/components/layout/Footer";
 import PageHeader from "@/components/shared/PageHeader";
 import { Card } from "@/components/ui/card";
 import { Info } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react"; // Import the Download icon
 
 const Admissions = () => {
   const requirements = [
@@ -79,6 +81,19 @@ const Admissions = () => {
           </div>
         </div>
       </section>
+
+      {/* Download Admission Form Button */}
+      <div className="flex justify-center my-8">
+        <Button 
+          asChild
+          className="bg-school-accent hover:bg-school-accent/90 text-white flex items-center gap-2"
+        >
+          <a href="/School_Form.pdf" download>
+            <Download className="h-4 w-4" />
+            Download Admission Form
+          </a>
+        </Button>
+      </div>
 
       <Footer />
     </>
