@@ -142,7 +142,7 @@ const Faculty = () => {
         {
           name: "Sh. Ashok Kumar Thakur ",
           subject: "History",
-          image: "",
+          image: "/faculty/ashok.jpeg",
           education: "M.A. (History), B.Ed.",
           experience: "20+ years"
         },
