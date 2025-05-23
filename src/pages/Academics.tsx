@@ -58,10 +58,12 @@ const Academics = () => {
           <h2 className="text-3xl font-bold text-center text-school-navy mb-12">Academic Levels</h2>
           
           <Tabs defaultValue="primary" className="max-w-4xl mx-auto">
-            <TabsList className="grid grid-cols-1 md:grid-cols-3 mb-8 gap-2">
-              <TabsTrigger value="primary" className="text-lg">Middle Sec.</TabsTrigger>
-              <TabsTrigger value="middle" className="text-lg">Secondary Sec.</TabsTrigger>
-              <TabsTrigger value="senior" className="text-lg">Sen Secondary Sec.</TabsTrigger>
+            <TabsList className="flex overflow-x-auto whitespace-nowrap mb-8">
+
+              <TabsTrigger value="upper-primary">Upper Primary</TabsTrigger>
+              <TabsTrigger value="secondary">Secondary</TabsTrigger>
+              <TabsTrigger value="senior-secondary">Senior Secondary</TabsTrigger>
+
             </TabsList>
             
             <TabsContent value="primary" className="bg-white p-6 md:p-8 rounded-lg shadow-md">
