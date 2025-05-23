@@ -149,12 +149,6 @@ const galleryContent = {
       title: "Principal's Speech",
       image: "/school/pri.png",
       caption: "Principal addressing the audience during the annual function"
-    },
-    {
-      id: 12,
-      title: "Sports Day",
-      image: "/school/fun.png",
-      caption: "March Past during the annual sports day"
     }
   ],
   achievements: [
