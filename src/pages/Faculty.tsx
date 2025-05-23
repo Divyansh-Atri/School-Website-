@@ -162,14 +162,14 @@ const Faculty = () => {
           name: "Smt. Minakshi Chambial ",
           subject: "Computer Science",
           image: "/faculty/min.jpeg",
-          education: "Bachelor’s Degree in Computer Science / IT",
+          education: "MSC. (Computer Science) / IT",
           experience: "15+ years"
         },
         {
           name: "Sh. Naresh Kumar Sharma ",
           subject: "Computer Science",
           image: "/faculty/naresh.png",
-          education: "Bachelor’s Degree in Computer Science / IT",
+          education: "MSC. (Computer Science) / IT",
           experience: "15+ years"
         },
         {
