@@ -44,15 +44,15 @@ const Faculty = () => {
   const class4Staff = [
     {
       name: "Sh. Sahib Singh",
-      image: "/faculty/bansi.png",
+      image: "/faculty/sahib.png",
     },
     {
       name: "Smt. Krishna Devi",
-      image: "/faculty/vijay.png",
+      image: "/faculty/",
     },
     {
       name: "Smt. Binta Devi",
-      image: "/faculty/baldev.png",
+      image: "/faculty/",
     }
   ];
 
