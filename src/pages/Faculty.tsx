@@ -66,6 +66,25 @@ const Faculty = () => {
           education: "M.Sc. (Physics), B.Ed. (Education)",
           experience: "15 years"
         },
+        {
+          name: "Smt. Renu Bala",
+          subject: "T.G.T. (Medical)",
+          image: "/faculty/renu.png",
+          education: "M.Sc. (Medical), B.Ed. (Education) & M.Phill",
+          experience: "15 years"
+        },
+        {
+          name: "Sh.Gulwant Singh",
+          subject: "Lab Assistant (Chemistry & Secondary)",
+          image: "/faculty/gul.png",
+          experience: "10+ years"
+        },
+        {
+          name: "Smt. Lata Devi ",
+          subject: "Lab Assitant (Physics & Biology) ",
+          image: "/faculty/lata.png",
+          experience: "15+ years"
+        }
         
       ]
     },
@@ -78,6 +97,13 @@ const Faculty = () => {
           image: "/faculty/sharmila.png",
           education: "M.Sc. (Mathematics), B.Ed. (Education)",
           experience: "25+ years"
+        },
+        {
+          name: "Smt. Naveen Lata",
+          subject: "Mathematics",
+          image: "/faculty/naveen.png",
+          education: "B.Sc. (Mathematics), B.Ed. (Education)",
+          experience: "15+ years"
         },
         
       ]
@@ -114,7 +140,7 @@ const Faculty = () => {
         {
           name: "Sh. Ravinder Singh",
           subject: "English",
-          image: "",
+          image: "/faculty/rav.png",
           education: "M.A. (English), B.Ed.",
           experience: "20+ years"
         },
@@ -124,6 +150,20 @@ const Faculty = () => {
           image: "/faculty/alka.png",
           education: "M.A. (Hindi), B.Ed.",
           experience: "30+ years"
+        },
+         {
+          name: "Smt. Archana",
+          subject: "Hindi (L.T.)",
+          image: "/faculty/arch.png",
+          education: "M.A. (Hindi), B.Ed.",
+          experience: "20+ years"
+        },
+         {
+          name: "Mr. Amit Sharma",
+          subject: "Sanskrit",
+          image: "/faculty/amit.png",
+          education: "Acharya , B.Ed.",
+          experience: "7+ years"
         },
 
 
@@ -140,11 +180,32 @@ const Faculty = () => {
           experience: "25+ years"
         },
         {
-          name: "Sh. Ashok Kumar Thakur ",
+          name: "Sh. Ashok Kumar Rana ",
           subject: "History",
           image: "/faculty/ashok.jpeg",
           education: "M.A. (History), B.Ed.",
           experience: "20+ years"
+        },
+        {
+          name: "Smt. Champa Rani ",
+          subject: "T.G.T. (Arts)",
+          image: "/faculty/champa.png",
+          education: "M.A. (History), M.Ed.",
+          experience: "15+ years"
+        },
+        {
+          name: "Smt. Poonam ",
+          subject: "T.G.T. Arts",
+          image: "/faculty/poonam.png",
+          education: "M.A. (Public Administration), B.Ed.",
+          experience: "10+ years"
+        },
+        {
+          name: "Smt. Laxmi Barjatia",
+          subject: "T.G.T. (Arts)",
+          image: "/faculty/laxmi.png",
+          education: "M.A. (English), B.Ed.",
+          experience: "10+ years"
         },
       ]
     },
@@ -154,9 +215,16 @@ const Faculty = () => {
         {
           name: "Sh. Ajay Sood",
           subject: "Physical Education",
-          image: "",
+          image: "/faculty/ajay.png",
           education: "Diploma in Physical Education",
           experience: "20+ years"
+        },
+        {
+          name: "Smt. Neena Devi",
+          subject: "Arts & Crafts",
+          image: "/faculty/neena.png",
+          education: "M.A. (English), B.Ed & Diploma in Arts and Crafts",
+          experience: "15+ years"
         },
         {
           name: "Smt. Minakshi Chambial ",
