@@ -87,7 +87,7 @@ export default function Footer() {
                 <Clock size={18} className="flex-shrink-0 text-yellow-400" />
                 <div>
                   <p className="font-medium text-white">Monday - Saturday</p>
-                  <p className="text-gray-200 text-sm">8:00 AM - 3:00 PM</p>
+                  <p className="text-gray-200 text-sm">9:00 AM - 3:00 PM</p>
                 </div>
               </li>
               <li className="flex gap-3">
