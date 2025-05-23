@@ -124,7 +124,7 @@ const galleryContent = {
       id: 7,
       title: "Award Ceremony",
       image: "/school/award.png",
-      caption: "The Principal honors the Deputy Director with a ceremonial welcome at the annual function"
+      caption: "The Principal honors the Deputy Director with a ceremonial welcome at meeting of heads"
     },
     {
       id: 8,
