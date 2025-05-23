@@ -85,7 +85,7 @@ const Faculty = () => {
           name: "Smt. Renu Bala",
           subject: "T.G.T. (Medical)",
           image: "/faculty/renu.png",
-          education: "M.Sc. (Medical), B.Ed. (Education) & M.Phill",
+          education: "M.Sc. M.Phill, B.Ed. (Education) ",
           experience: "15 years"
         },
         {
