@@ -40,7 +40,22 @@ const Faculty = () => {
       quote: "Supporting education through dedicated service."
     }
   ];
-  
+
+  const class4Staff = [
+    {
+      name: "Sh. Sahib Singh",
+      image: "/faculty/bansi.png",
+    },
+    {
+      name: "Smt. Krishna Devi",
+      image: "/faculty/vijay.png",
+    },
+    {
+      name: "Smt. Binta Devi",
+      image: "/faculty/baldev.png",
+    }
+  ];
+
   const departments = [
     {
       name: "Science Department",
@@ -85,7 +100,6 @@ const Faculty = () => {
           image: "/faculty/lata.png",
           experience: "15+ years"
         }
-        
       ]
     },
     {
@@ -104,8 +118,7 @@ const Faculty = () => {
           image: "/faculty/naveen.png",
           education: "B.Sc. (Mathematics), B.Ed. (Education)",
           experience: "15+ years"
-        },
-        
+        }
       ]
     },
     {
@@ -117,14 +130,14 @@ const Faculty = () => {
           image: "/faculty/akash.png",
           education: "Master of Commerce (M.Com)",
           experience: "25+ years"
-        }, {
+        },
+        {
           name: "Sh. Vinod Sharma ",
           subject: "Accountancy & Business Studies",
           image: "/faculty/vinod.png",
           education: "Master of Commerce (M.Com)",
           experience: "20+ years"
-        },
-        
+        }
       ]
     },
     {
@@ -151,22 +164,20 @@ const Faculty = () => {
           education: "M.A. (Hindi), B.Ed.",
           experience: "30+ years"
         },
-         {
+        {
           name: "Smt. Archana",
           subject: "Hindi (L.T.)",
           image: "/faculty/arch.png",
           education: "M.A. (Hindi), B.Ed.",
           experience: "20+ years"
         },
-         {
+        {
           name: "Mr. Amit Sharma",
           subject: "Sanskrit",
           image: "/faculty/amit.png",
           education: "Acharya , B.Ed.",
           experience: "7+ years"
-        },
-
-
+        }
       ]
     },
     {
@@ -206,7 +217,7 @@ const Faculty = () => {
           image: "/faculty/laxmi.png",
           education: "M.A. (English), B.Ed.",
           experience: "10+ years"
-        },
+        }
       ]
     },
     {
@@ -257,17 +268,17 @@ const Faculty = () => {
       ]
     }
   ];
-  
+
   return (
     <>
       <Navbar />
-      
+
       <PageHeader 
         title="Our Faculty" 
         subtitle="Meet our dedicated team of educators committed to academic excellence"
         backgroundImage="/lovable-uploads/school.png"
       />
-      
+
       {/* Faculty Introduction */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -277,7 +288,7 @@ const Faculty = () => {
               Our faculty members are the backbone of our institution. Each educator brings a wealth of knowledge, experience, and passion to the classroom. They are committed to nurturing young minds and helping each student achieve their full potential.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -286,7 +297,7 @@ const Faculty = () => {
               <h3 className="text-xl font-bold mb-2 text-school-navy">Qualified Educators</h3>
               <p className="text-gray-600">All our teachers hold advanced degrees in their respective fields with proper teaching certifications.</p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-school-accent">
@@ -296,7 +307,7 @@ const Faculty = () => {
               <h3 className="text-xl font-bold mb-2 text-school-navy">Continuous Learning</h3>
               <p className="text-gray-600">Our teachers regularly attend professional development programs to enhance their teaching methodologies.</p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-school-accent">
@@ -309,24 +320,27 @@ const Faculty = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Administration */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-school-navy mb-12">School Administration</h2>
-          
+
           <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
             {/* Principal and Vice Principal */}
             {administration.map((admin, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <div className="flex flex-col md:flex-row">
-                  <div className="md:w-2/5 h-[400px] relative">
+                  <div className="md:w-2/5 h-[400px] relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10" />
                     <img 
                       src={admin.image} 
                       alt={admin.name} 
-                      className="w-full h-full object-cover bg-gray-50"
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                       style={{
-                        objectPosition: admin.image.includes('pintu') ? 'center 10%' : 'center'
+                        objectFit: 'cover',
+                        objectPosition: 'center 20%',
+                        aspectRatio: '3/4'
                       }}
                     />
                   </div>
@@ -349,14 +363,21 @@ const Faculty = () => {
             {administrativeStaff.map((staff, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <div className="flex flex-col md:flex-row">
-                  <div className="md:w-2/5 h-[400px] relative">
+                  <div className="md:w-2/5 h-[400px] relative overflow-hidden">
                     {staff.image ? (
-                      <img 
-                        src={staff.image} 
-                        alt={staff.name} 
-                        className="w-full h-full object-cover bg-gray-50"
-                        style={{ objectPosition: 'center' }}
-                      />
+                      <>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10" />
+                        <img 
+                          src={staff.image} 
+                          alt={staff.name} 
+                          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                          style={{
+                            objectFit: 'cover',
+                            objectPosition: 'center 20%',
+                            aspectRatio: '3/4'
+                          }}
+                        />
+                      </>
                     ) : (
                       <div className="w-full h-full bg-gray-50 flex items-center justify-center">
                         <User className="h-20 w-20 text-gray-400" />
@@ -376,33 +397,39 @@ const Faculty = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Academic Departments */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-school-navy mb-12">Academic Departments</h2>
-          
+
           {departments.map((department, index) => (
             <div key={index} className="mb-16">
               <h3 className="text-2xl font-bold text-school-navy mb-8">{department.name}</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {department.faculty.map((member, idx) => (
-                  <div key={idx} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div className="aspect-[3/4] relative">
+                  <div key={idx} className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+                    <div className="aspect-[4/5] relative overflow-hidden rounded-t-lg group">
                       {member.image ? (
-                        <img 
-                          src={member.image} 
-                          alt={member.name}
-                          className="w-full h-full object-cover"
-                          style={{ objectPosition: 'center top' }}
-                        />
+                        <>
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10" />
+                          <img 
+                            src={member.image} 
+                            alt={member.name}
+                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            style={{ 
+                              objectFit: 'cover',
+                              objectPosition: 'center 15%',
+                            }}
+                          />
+                        </>
                       ) : (
-                        <div className="w-full h-full bg-gray-100 flex items-center justify-center">
+                        <div className="w-full h-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
                           <User className="h-20 w-20 text-gray-400" />
                         </div>
                       )}
                     </div>
-                    <div className="p-6">
+                    <div className="p-6 border-t border-gray-100">
                       <h4 className="text-xl font-bold text-school-navy mb-2">{member.name}</h4>
                       <p className="text-school-accent font-medium mb-2">{member.subject}</p>
                       <div className="text-sm text-gray-600 space-y-1">
@@ -417,9 +444,45 @@ const Faculty = () => {
           ))}
         </div>
       </section>
-      
-      {/* Join Us Banner */}
-      
+
+      {/* Class 4th Staff */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-school-navy mb-12">Class IV Staff</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {class4Staff.map((staff, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div className="aspect-[4/5] relative overflow-hidden rounded-t-lg group">
+                  {staff.image ? (
+                    <>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10" />
+                      <img 
+                        src={staff.image} 
+                        alt={staff.name}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        style={{ 
+                          objectFit: 'cover',
+                          objectPosition: 'center 15%',
+                        }}
+                      />
+                    </>
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+                      <User className="h-20 w-20 text-gray-400" />
+                    </div>
+                  )}
+                </div>
+                <div className="p-6 border-t border-gray-100">
+                  <h4 className="text-xl font-bold text-school-navy mb-2">{staff.name}</h4>
+                  <p className="text-school-accent font-medium mb-2">Class IV Staff</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   );
