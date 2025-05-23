@@ -57,16 +57,14 @@ const Academics = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-school-navy mb-12">Academic Levels</h2>
           
-          <Tabs defaultValue="primary" className="max-w-4xl mx-auto">
+          <Tabs defaultValue="upper-primary" className="max-w-4xl mx-auto">
             <TabsList className="flex overflow-x-auto whitespace-nowrap mb-8">
-
               <TabsTrigger value="upper-primary">Upper Primary</TabsTrigger>
               <TabsTrigger value="secondary">Secondary</TabsTrigger>
               <TabsTrigger value="senior-secondary">Senior Secondary</TabsTrigger>
-
             </TabsList>
             
-            <TabsContent value="primary" className="bg-white p-6 md:p-8 rounded-lg shadow-md">
+            <TabsContent value="upper-primary" className="bg-white p-6 md:p-8 rounded-lg shadow-md">
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-1/3">
                   <img 
@@ -92,7 +90,7 @@ const Academics = () => {
               </div>
             </TabsContent>
             
-            <TabsContent value="middle" className="bg-white p-6 md:p-8 rounded-lg shadow-md">
+            <TabsContent value="secondary" className="bg-white p-6 md:p-8 rounded-lg shadow-md">
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-1/3">
                   <img 
@@ -119,7 +117,7 @@ const Academics = () => {
               </div>
             </TabsContent>
             
-            <TabsContent value="senior" className="bg-white p-6 md:p-8 rounded-lg shadow-md">
+            <TabsContent value="senior-secondary" className="bg-white p-6 md:p-8 rounded-lg shadow-md">
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-1/3 space-y-4">
                   {/* Gallery column for senior section images */}
