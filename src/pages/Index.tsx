@@ -66,22 +66,79 @@ const Index = () => {
 
      
       {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-gray-100">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-school-navy mb-6">Join Our Educational Community</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-            Begin your journey with us and discover the perfect blend of academic excellence, extracurricular opportunities, and value-based education.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Button asChild className="bg-school-accent hover:bg-school-navy">
-              <Link to="/admissions">Apply for Admission</Link>
-            </Button>
-            <Button asChild variant="outline" className="border-school-navy text-school-navy hover:bg-school-navy hover:text-white">
-              <Link to="/contact">Contact Us</Link>
-            </Button>
+     {/* Quick Links Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-school-navy mb-12">Quick Links</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            <a 
+              href="http://hpbose.org" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+            >
+              <h3 className="text-xl font-bold text-school-navy mb-3">HP Board of School Education</h3>
+              <p className="text-gray-600 mb-4">Access official board information, results, and notifications</p>
+              <div className="text-school-accent flex items-center">
+                Visit Website 
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </div>
+            </a>
+
+            <a 
+              href="https://education.hp.gov.in" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+            >
+              <h3 className="text-xl font-bold text-school-navy mb-3">HP Education Department</h3>
+              <p className="text-gray-600 mb-4">Stay updated with educational policies and announcements</p>
+              <div className="text-school-accent flex items-center">
+                Visit Website 
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </div>
+            </a>
+
+            <a 
+              href="https://samagra.education.gov.in" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+            >
+              <h3 className="text-xl font-bold text-school-navy mb-3">Samagra Shiksha</h3>
+              <p className="text-gray-600 mb-4">Learn about educational schemes and initiatives</p>
+              <div className="text-school-accent flex items-center">
+                Visit Website 
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </div>
+            </a>
+
+            <a 
+              href="https://ncert.nic.in/textbook.php?fhbr1=6-12" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+            >
+              <h3 className="text-xl font-bold text-school-navy mb-3">NCERT E-Books</h3>
+              <p className="text-gray-600 mb-4">Access free NCERT textbooks and educational resources</p>
+              <div className="text-school-accent flex items-center">
+                Visit Website 
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </div>
+            </a>
           </div>
         </div>
       </section>
+
 
       <Footer />
     </>
