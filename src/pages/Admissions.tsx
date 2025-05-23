@@ -75,7 +75,7 @@ const Admissions = () => {
                 <h3 className="text-lg font-semibold text-school-navy">Fee Structure</h3>
               </div>
               <p className="text-gray-600 mb-4">
-                Being a Government Senior Secondary School, there is no tuition fee. Other charges are nominal and as per Himachal Pradesh Government norms.
+                Being a Government Senior Secondary School, there is no tuition fee for girls. Other charges are nominal and as per Himachal Pradesh Government norms.
               </p>
             </div>
           </div>
