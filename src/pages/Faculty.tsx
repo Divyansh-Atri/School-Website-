@@ -175,7 +175,7 @@ const Faculty = () => {
         {
           name: "Ms. Sakshi Sharma ",
           subject: "Agriculture ",
-          image: "",
+          image: "/faculty/sak.jpeg",
           education: "M.Sc. (Agriculture)",
           experience: "15+ years"
         },
