@@ -43,14 +43,14 @@ const Events = () => {
   // Annual calendar data remains the same
   const annualEvents = [
     { month: "April", events: ["New Academic Session Begins", "World Health Day Activities", "Earth Day Celebration"] },
-    { month: "May", events: ["Career Counseling Workshop", "Inter-House Sports Competitions", "Parent-Teacher Meeting"] },
+    { month: "May", events: ["Career Counseling Workshop", "Inter-House Sports Competitions", "Parent-Teacher Meeting", "Anti-Tobacco Day"] },
     { month: "June", events: ["World Environment Day", "Cultural Talent Show", "Annual Science Exhibition"] },
     { month: "July", events: ["Alumni Meet", "Tree Plantation Drive", "Mathematics Quiz Competition"] },
     { month: "August", events: ["Independence Day Celebration", "Inter-School Debate Competition", "Teachers' Workshop"] },
     { month: "September", events: ["Teachers' Day Celebration", "Hindi Diwas", "Science Quiz"] },
     { month: "October", events: ["Gandhi Jayanti Celebration", "Educational Excursion", "Dussehra Break"] },
     { month: "November", events: ["Children's Day Celebration", "Annual Day", "Inter-House Sports Finals"] },
-    { month: "December", events: ["Math Olympiad", "Art & Craft Exhibition", "Winter Break"] },
+    { month: "December", events: ["Children Science Congress", "Art & Craft Exhibition", "Winter Break"] },
     { month: "January", events: ["School Reopens", "Annual Sports Day", "Republic Day Celebration"] },
     { month: "February", events: ["Science Exhibition", "National Science Day", "Farewell for Class 12"] },
     { month: "March", events: ["Annual Examinations", "Parent-Teacher Meeting", "Result Preparation"] }
