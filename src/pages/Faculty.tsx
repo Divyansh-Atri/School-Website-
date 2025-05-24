@@ -327,7 +327,7 @@ const Faculty = () => {
         </div>
       </section>
 
-      {/* Administration */}
+      {/* Administration Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-school-navy mb-12">School Administration</h2>
@@ -335,29 +335,43 @@ const Faculty = () => {
           <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
             {/* Principal and Vice Principal */}
             {administration.map((admin, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div key={index} className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
                 <div className="flex flex-col md:flex-row">
                   <div className="md:w-2/5 h-[400px] relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/20 to-transparent z-10" />
+                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-md z-20">
+                      <span className="text-sm font-semibold text-school-navy">{admin.position}</span>
+                    </div>
                     <img 
                       src={admin.image} 
                       alt={admin.name} 
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       style={{
                         objectFit: 'cover',
-                        objectPosition: 'center 20%',
-                        aspectRatio: '3/4'
+                        objectPosition: 'center 20%'
                       }}
                     />
                   </div>
-                  <div className="md:w-3/5 p-6">
-                    <h3 className="text-2xl font-bold text-school-navy mb-2">{admin.name}</h3>
-                    <p className="text-school-accent font-medium text-lg mb-4">{admin.position}</p>
-                    <div className="space-y-2 mb-6">
-                      <p><span className="font-medium">Education:</span> {admin.education}</p>
-                      <p><span className="font-medium">Experience:</span> {admin.experience}</p>
+                  <div className="md:w-3/5 p-8 relative">
+                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-school-navy via-school-accent to-school-gold opacity-75" />
+                    <h3 className="text-2xl font-bold text-school-navy mb-3 group-hover:text-school-accent transition-colors">
+                      {admin.name}
+                    </h3>
+                    <div className="space-y-4 mb-6">
+                      <div className="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-school-accent flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                        </svg>
+                        <span className="text-gray-600">{admin.education}</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-school-accent flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span className="text-gray-600">{admin.experience}</span>
+                      </div>
                     </div>
-                    <blockquote className="border-l-4 border-school-gold pl-4 italic text-gray-600">
+                    <blockquote className="border-l-4 border-school-gold pl-4 italic text-gray-600 bg-gray-50 p-4 rounded-r-lg">
                       "{admin.quote}"
                     </blockquote>
                   </div>
@@ -366,40 +380,44 @@ const Faculty = () => {
             ))}
 
             {/* Administrative Staff */}
-            {administrativeStaff.map((staff, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div className="flex flex-col md:flex-row">
-                  <div className="md:w-2/5 h-[400px] relative overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+              {administrativeStaff.map((staff, index) => (
+                <div key={index} className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                  <div className="aspect-[4/5] relative overflow-hidden">
                     {staff.image ? (
                       <>
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent z-10" />
                         <img 
                           src={staff.image} 
-                          alt={staff.name} 
-                          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                          style={{
+                          alt={staff.name}
+                          className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                          style={{ 
                             objectFit: 'cover',
-                            objectPosition: 'center 20%',
-                            aspectRatio: '3/4'
+                            objectPosition: 'center 15%',
                           }}
                         />
                       </>
                     ) : (
-                      <div className="w-full h-full bg-gray-50 flex items-center justify-center">
-                        <User className="h-20 w-20 text-gray-400" />
+                      <div className="w-full h-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+                        <User className="h-24 w-24 text-gray-300" />
                       </div>
                     )}
+                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-md">
+                      <span className="text-sm font-medium text-school-navy">{staff.position}</span>
+                    </div>
                   </div>
-                  <div className="md:w-3/5 p-6">
-                    <h3 className="text-2xl font-bold text-school-navy mb-2">{staff.name}</h3>
-                    <p className="text-school-accent font-medium text-lg mb-4">{staff.position}</p>
-                    <blockquote className="border-l-4 border-school-gold pl-4 italic text-gray-600">
+                  <div className="p-6 bg-white relative">
+                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-school-navy via-school-accent to-school-gold opacity-75" />
+                    <h4 className="text-xl font-bold text-school-navy mb-4 group-hover:text-school-accent transition-colors">
+                      {staff.name}
+                    </h4>
+                    <blockquote className="text-gray-600 italic border-l-4 border-school-gold pl-4 py-2">
                       "{staff.quote}"
                     </blockquote>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -411,18 +429,18 @@ const Faculty = () => {
 
           {departments.map((department, index) => (
             <div key={index} className="mb-16">
-              <h3 className="text-2xl font-bold text-school-navy mb-8">{department.name}</h3>
+              <h3 className="text-2xl font-bold text-school-navy mb-8 text-center">{department.name}</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {department.faculty.map((member, idx) => (
-                  <div key={idx} className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
-                    <div className="aspect-[4/5] relative overflow-hidden rounded-t-lg group">
+                  <div key={idx} className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                    <div className="aspect-[4/5] relative overflow-hidden">
                       {member.image ? (
                         <>
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent z-10" />
                           <img 
                             src={member.image} 
                             alt={member.name}
-                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
                             style={{ 
                               objectFit: 'cover',
                               objectPosition: 'center 15%',
@@ -431,16 +449,45 @@ const Faculty = () => {
                         </>
                       ) : (
                         <div className="w-full h-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
-                          <User className="h-20 w-20 text-gray-400" />
+                          <User className="h-24 w-24 text-gray-300" />
                         </div>
                       )}
+                      
+                      {/* Floating Subject Badge */}
+                      <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-md">
+                        <span className="text-sm font-medium text-school-navy">{member.subject}</span>
+                      </div>
                     </div>
-                    <div className="p-6 border-t border-gray-100">
-                      <h4 className="text-xl font-bold text-school-navy mb-2">{member.name}</h4>
-                      <p className="text-school-accent font-medium mb-2">{member.subject}</p>
-                      <div className="text-sm text-gray-600 space-y-1">
-                        <p>{member.education}</p>
-                        <p>{member.experience}</p>
+
+                    <div className="p-6 bg-white relative">
+                      {/* Decorative Accent Line */}
+                      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-school-navy via-school-accent to-school-gold opacity-75" />
+                      
+                      <div className="space-y-4">
+                        <div>
+                          <h4 className="text-xl font-bold text-school-navy group-hover:text-school-accent transition-colors">
+                            {member.name}
+                          </h4>
+                        </div>
+
+                        <div className="space-y-2 text-sm text-gray-600">
+                          {member.education && (
+                            <div className="flex items-start gap-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-school-accent flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                              </svg>
+                              <span>{member.education}</span>
+                            </div>
+                          )}
+                          {member.experience && (
+                            <div className="flex items-start gap-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-school-accent flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                              <span>{member.experience} Experience</span>
+                            </div>
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -451,22 +498,22 @@ const Faculty = () => {
         </div>
       </section>
 
-      {/* Class 4th Staff */}
+      {/* Class 4th Staff Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-school-navy mb-12">Class IV Staff</h2>
+          <h2 className="text-3xl font-bold text-center text-school-navy mb-12">Support Staff</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {class4Staff.map((staff, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div className="aspect-[4/5] relative overflow-hidden rounded-t-lg group">
+              <div key={index} className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                <div className="aspect-[4/5] relative overflow-hidden">
                   {staff.image ? (
                     <>
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/20 to-transparent z-10" />
                       <img 
                         src={staff.image} 
                         alt={staff.name}
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                         style={{ 
                           objectFit: 'cover',
                           objectPosition: 'center 15%',
@@ -475,13 +522,16 @@ const Faculty = () => {
                     </>
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
-                      <User className="h-20 w-20 text-gray-400" />
+                      <User className="h-24 w-24 text-gray-300" />
                     </div>
                   )}
                 </div>
-                <div className="p-6 border-t border-gray-100">
-                  <h4 className="text-xl font-bold text-school-navy mb-2">{staff.name}</h4>
-                  <p className="text-school-accent font-medium mb-2">Class IV Staff</p>
+                <div className="p-6 relative">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-school-navy via-school-accent to-school-gold opacity-75" />
+                  <h4 className="text-xl font-bold text-school-navy mb-2 group-hover:text-school-accent transition-colors">
+                    {staff.name}
+                  </h4>
+                  <p className="text-school-accent font-medium">Support Staff</p>
                 </div>
               </div>
             ))}
