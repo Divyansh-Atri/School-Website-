@@ -107,7 +107,7 @@ export default function Footer() {
             <p className="mt-2 md:mt-0">
               Website designed and developed by{" "}
               <a
-                href="https://github.com/divyanshatri"
+                href="https://github.com/Minakshi-Chambial"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-school-gold hover:text-school-gold/90 font-medium transition-colors"
