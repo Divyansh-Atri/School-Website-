@@ -89,7 +89,7 @@ const Index = () => {
             </a>
 
             <a 
-              href="https://education.hp.gov.in" 
+              href="https://himachal.nic.in/index.php?dpt_id=16&lang=1" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100"
