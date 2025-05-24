@@ -11,7 +11,7 @@ const Hero = () => {
           className="w-full h-full bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/lovable-uploads/main-gate.png')" }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-school-navy/95 to-school-navy/85 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-r from-school-navy/60 to-school-navy/50 mix-blend-multiply" />
         </div>
       </div>
       
