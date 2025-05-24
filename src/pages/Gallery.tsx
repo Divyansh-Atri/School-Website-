@@ -188,9 +188,9 @@ const galleryContent = {
     },
     {
       id: 12,
-      title: "Block Level Yoga Olympiad",
+      title: "Block Bhawarna Yoga Olympiad U-17 ",
       image: "/school/yoga.png",
-      caption: "Principal addressing the audience during the annual function"
+      caption: "Yoga Olympiad organised in our school"
     }
   ],
   achievements: [
