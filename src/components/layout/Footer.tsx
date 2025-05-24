@@ -112,7 +112,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-school-gold hover:text-school-gold/90 font-medium transition-colors"
               >
-                Divyansh Atri
+                Minakshi Chambial
               </a>
             </p>
           </div>
