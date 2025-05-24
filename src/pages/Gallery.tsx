@@ -43,6 +43,36 @@ const galleryContent = {
       title: "School Garden",
       image: "/school/garden.png",
       caption: "Beautiful garden area for relaxation and environmental studies"
+    },
+    {
+      id: 7,
+      title: "Tribute",
+      image: "/school/prilist.png",
+      caption: "A legacy of leadership etched in time at Govt. Utkrisht Sr. Sec. School, Daroh."
+    },
+    {
+      id: 8,
+      title: "Inspiration",
+      image: "/school/akhand.png",
+      caption: "A shining legacy of excellence — where education shapes leaders and achievers."
+    },
+    {
+      id: 9,
+      title: "Superintendent",
+      image: "/school/super.png",
+      caption: "A legacy of Grade II leadership etched in time at Govt. Utkrisht Sr. Sec. School, Daroh."
+    },
+    {
+      id: 10,
+      title: "Honor Booard Class Xth",
+      image: "/school/ho10.png",
+      caption: "Stars of Class 10 – Shining Bright with Hard Work, Dreams, and Distinction!"
+    },
+    {
+      id: 11,
+      title: "Honor Booard Class XIIth",
+      image: "/school/ho12.png",
+      caption: "Stars of Class 12th  – Shining Bright with Hard Work, Dreams, and Distinction!"
     }
   ],
   classrooms: [
@@ -78,6 +108,12 @@ const galleryContent = {
     },
     {
       id: 6,
+      title: "Security Lab",
+      image: "/school/security.png",
+      caption: "Specialized lab for Security learning and practice"
+    },
+    {
+      id: 7,
       title: "Security Lab",
       image: "/school/security.png",
       caption: "Specialized lab for Security learning and practice"
