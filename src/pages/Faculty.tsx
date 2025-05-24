@@ -89,6 +89,13 @@ const Faculty = () => {
           experience: "15 years"
         },
         {
+          name: "Smt. Naveen Lata",
+          subject: "T.G.T. (Non-Medical)",
+          image: "/faculty/naveen.png",
+          education: "B.Sc. (Mathematics), B.Ed. (Education)",
+          experience: "15+ years"
+        },
+        {
           name: "Sh.Gulwant Singh",
           subject: "Lab Assistant (Chemistry & Secondary)",
           image: "/faculty/gul.png",
@@ -111,13 +118,6 @@ const Faculty = () => {
           image: "/faculty/sharmila.png",
           education: "M.Sc. (Mathematics), B.Ed. (Education)",
           experience: "25+ years"
-        },
-        {
-          name: "Smt. Naveen Lata",
-          subject: "Mathematics",
-          image: "/faculty/naveen.png",
-          education: "B.Sc. (Mathematics), B.Ed. (Education)",
-          experience: "15+ years"
         }
       ]
     },
