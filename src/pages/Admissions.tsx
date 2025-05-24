@@ -11,10 +11,10 @@ const Admissions = () => {
     {
       title: "Admission Process",
       items: [
-        "Forms available in February 2024",
-        "Last date: March 15, 2024",
-        "Results: March 25, 2024",
-        "Academic Session: April 2024 - March 2025",
+        "Forms available: April 1st",
+        "Last date: April 10th",
+        "Results: March 31st",
+        "Academic Session: April - March ",
         "School Timings: 9:00 AM - 3:00 PM (Mon-Sat)"
       ]
     },
