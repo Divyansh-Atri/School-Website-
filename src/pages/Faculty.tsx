@@ -48,7 +48,7 @@ const Faculty = () => {
     },
     {
       name: "Smt. Krishna Devi",
-      image: "/faculty/",
+      image: "/faculty/kri.jpeg",
     },
     {
       name: "Smt. Binta Devi",
