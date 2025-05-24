@@ -10,7 +10,7 @@ const Events = () => {
     {
       id: 1,
       title: "Annual Day Celebration",
-      date: "December 12, 2024",
+      date: "December 2024",
       time: "9:00 AM - 4:00 PM",
       location: "School Premises",
       image: "/school/ann1.png",
@@ -20,7 +20,7 @@ const Events = () => {
     {
       id: 2,
       title: "Sports Competition",
-      date: "september 20-23, 2023",
+      date: "september 2023",
       time: "8:30 AM - 3:30 PM",
       location: "School Sports Ground",
       image: "/school/ann3.png",
@@ -30,7 +30,7 @@ const Events = () => {
     {
       id: 3,
       title: "Deputy Director Visit",
-      date: " March 20, 2025",
+      date: " March 2025",
       time: "8:30 AM - 3:30 PM",
       location: "School Premises",
       image: "/school/award.png",
@@ -40,7 +40,7 @@ const Events = () => {
     {
       id: 4,
       title: "Yoga Olympiad",
-      date: " May 24, 2025",
+      date: " May 2025",
       time: "9:30 AM - 11:30 AM",
       location: "School Premises",
       image: "/school/yoga.png",
