@@ -275,10 +275,10 @@ const Academics = () => {
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <Button asChild className="bg-school-gold text-school-dark hover:bg-opacity-90">
-              <a href="/admissions">Apply for Admission</a>
+              <a href="https://pmgusssdaroh.netlify.app/admissions">Apply for Admission</a>
             </Button>
             <Button asChild variant="outline" className="bg-school-gold text-school-dark hover:bg-opacity-90">
-              <a href="/contact">Contact Us</a>
+              <a href="https://pmgusssdaroh.netlify.app/contact">Contact Us</a>
             </Button>
           </div>
         </div>
