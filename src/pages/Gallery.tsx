@@ -185,6 +185,12 @@ const galleryContent = {
       title: "Principal's Speech",
       image: "/school/pri.png",
       caption: "Principal addressing the audience during the annual function"
+    },
+    {
+      id: 12,
+      title: "Block Level Yoga Olympiad",
+      image: "/school/yoga.png",
+      caption: "Principal addressing the audience during the annual function"
     }
   ],
   achievements: [
