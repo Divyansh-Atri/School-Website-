@@ -34,7 +34,17 @@ const Events = () => {
       time: "8:30 AM - 3:30 PM",
       location: "School Premises",
       image: "/school/award.png",
-      description: "Annual sports meet featuring athletics, team sports, and individual competitions among the four houses.",
+      description: "Heads Meeting - Block Bhawarna , Dheera & Thural",
+      category: "sports"
+    },
+    {
+      id: 4,
+      title: "Yoga Olympiad",
+      date: " May 24, 2025",
+      time: "9:30 AM - 11:30 AM",
+      location: "School Premises",
+      image: "/school/yoga.png",
+      description: "Block Level (Bhawarna) Yoga olympiad being organised in our school where students participated actively and selected at district level",
       category: "sports"
     }
     // Add more events as needed
