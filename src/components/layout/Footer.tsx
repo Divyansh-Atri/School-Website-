@@ -31,17 +31,23 @@ export default function Footer() {
               Government Utkrisht Senior Secondary School Daroh is committed to providing quality education and shaping the future of our students.
             </p>
             <div className="flex gap-4 mt-6">
-              <a href="#" className="hover:text-school-gold transition-colors" aria-label="Facebook">
+              <a 
+                href="https://www.facebook.com/PMSHRI.G.S.S.S.DAROH" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-school-gold transition-colors" 
+                aria-label="Follow us on Facebook"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" className="hover:text-school-gold transition-colors" aria-label="Twitter">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="hover:text-school-gold transition-colors" aria-label="Instagram">
+              <a 
+                href="https://www.instagram.com/pmshri.g.s.s.s.daroh/?hl=en" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-school-gold transition-colors" 
+                aria-label="Follow us on Instagram"
+              >
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="hover:text-school-gold transition-colors" aria-label="YouTube">
-                <Youtube size={20} />
               </a>
             </div>
           </div>
