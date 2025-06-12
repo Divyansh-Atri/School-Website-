@@ -1,2 +1,4 @@
-This a School Website of PM SHRI GUSSS DAROH .
-Link to Website is : pmgusssdaroh.netlify.app
+🌐 PM SHRI GUSSS DAROH – Official School Website
+This is the official website of PM SHRI GUSSS Daroh, developed to provide easy access to school-related information, announcements, and resources.
+
+🔗 Visit the Website
